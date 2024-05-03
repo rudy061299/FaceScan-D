@@ -20,3 +20,4 @@ This project uses Swift, ARKit, and Metal to capture a 3D point cloud of a face 
 3. Click the top left button once to start scanning and hold still. The black screen will be populated with a point cloud. Click on the top left button again to stop scanning.
 4. Click on the top right button to save the point cloud as a `.ply` file in the files section of the iPad.
 5. Share this `.ply` to the Macbook, where you can view the point cloud using software like [MeshLab](https://www.meshlab.net/).
+6. If you see only a partial scan of your face or no scan at all, either try positioning your face closer to the screen or changing the `position.z` parameter on line 243 in the `Services/ScanRenderer.swift` file: `if !(position.x.isNaN || position.y.isNaN || position.z.isNaN) && position.z > -0.4`
