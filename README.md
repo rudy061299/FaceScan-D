@@ -12,3 +12,11 @@ This project uses Swift, ARKit, and Metal to capture a 3D point cloud of a face 
 6. Once the iPad has been configured by Xcode, build the app using the run button in the top bar of the left section of Xcode.
 7. You can see the app being installed on the iPad; however, it will give you an error message saying that the app is unverified. On your iPad, navigate to `Settings` -> `General` -> `General` -> `VPN & Device Management`. You can trust and verify the app from here.
 8. Run the app again on Xcode, and it should run successfully on the connected iPad.
+
+## Running the app
+
+1. When you open the app, a black screen will be visible along with two icons on the top left and right corners.
+2. To scan your face, position yourself directly in front of the front camera and close enough to the screen.
+3. Click the top left button once to start scanning and hold still. The black screen will be populated with a point cloud. Click on the top left button again to stop scanning.
+4. Click on the top right button to save the point cloud as a `.ply` file in the files section of the iPad.
+5. Share this `.ply` to the Macbook, where you can view the point cloud using software like [MeshLab](https://www.meshlab.net/).
